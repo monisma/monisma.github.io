@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- Fixed: Explicitly setting the initial attribute so the JavaScript detector can read it instantly -->
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,7 @@
     <link href="https://unpkg.com" rel="stylesheet">
     
     <style>
-        :root {
+        :root, [data-theme="dark"] {
             --bg-primary: #070a13;
             --bg-secondary: #0f1322;
             --text-primary: #f8fafc;
@@ -237,7 +238,7 @@
                     <a href="https://linkedin.com" target="_blank">💼 LinkedIn</a>
                 </div>
             </div>
-            <button class="theme-toggle" id="themeBtn">loss_toggle()</button>
+            <button class="theme-toggle" id="themeBtn">epoch_toggle()</button>
         </header>
 
         <!-- Profile Summary -->
@@ -293,5 +294,3 @@
                 <div class="skills-group" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
                     <h4>Data Storage & Cloud</h4>
                     <div class="skills-container">
-                        <div class="skill-pill">Microsoft Azure</div>
-                        <div class="skill-pill">Vertica</div>
