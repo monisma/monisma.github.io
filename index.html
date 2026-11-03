@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monish Mathpal | Data Scientist CV</title>
-    <!-- Google Fonts Links -->
+    <!-- Google Fonts Integration Links -->
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
     <link href="https://googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- AOS Library Style Layers -->
+    <!-- CDN URLs for AOS Library Style Layers -->
     <link href="https://unpkg.com" rel="stylesheet">
     
     <style>
@@ -34,7 +34,7 @@
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            transition: background-color 0.3s ease, border-color 0.3s ease;
+            transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
         }
 
         body {
@@ -108,7 +108,7 @@
         }
 
         h2 {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             margin-bottom: 1.5rem;
             display: flex;
             align-items: center;
@@ -143,7 +143,7 @@
             align-items: flex-start;
             flex-wrap: wrap;
             gap: 0.5rem;
-            margin-bottom: 0.75rem;
+            margin-bottom: 0.5rem;
         }
 
         .time-tag {
@@ -177,7 +177,6 @@
             border: 1px solid var(--border);
             border-radius: 12px;
             padding: 1.25rem;
-            margin-bottom: 1rem;
         }
 
         .skills-group h4 {
@@ -202,9 +201,20 @@
             border-radius: 6px;
         }
 
+        .meta-list {
+            list-style: none;
+        }
+        
+        .meta-list li {
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
         @media (min-width: 768px) {
             body { padding: 4rem 2rem; }
-            .grid-2col { grid-template-columns: 1.2fr 0.8fr; }
+            .grid-2col { grid-template-columns: 1.1fr 0.9fr; }
+            .grid-skills { grid-template-columns: 1fr 1fr; }
         }
     </style>
 </head>
@@ -227,61 +237,61 @@
                     <a href="https://linkedin.com" target="_blank">💼 LinkedIn</a>
                 </div>
             </div>
-            <button class="theme-toggle" id="themeBtn">epoch_toggle()</button>
+            <button class="theme-toggle" id="themeBtn">loss_toggle()</button>
         </header>
 
-        <!-- Summary / Profile -->
+        <!-- Profile Summary -->
         <section data-aos="fade-up" data-aos-duration="800">
-            <h2>01. Objective_Function</h2>
-            <p class="subtitle" style="font-size: 1.1rem;">
+            <h2>01. Profile</h2>
+            <p class="subtitle" style="font-size: 1.1rem; line-height: 1.7;">
                 Passionate full-stack data professional with 4+ years of experience building scalable applications and predictive solutions. Specialized in architecture development, quantitative engineering frameworks, open-source utilities, and localized workflow optimization.
             </p>
         </section>
 
-        <!-- Dynamic Experience Section -->
+        <!-- Technical Skills Mapping -->
         <section>
-            <h2>02. Professional_History</h2>
-            <div class="grid">
+            <h2>02. Core_Competencies</h2>
+            <div class="grid grid-skills">
                 
-                <div class="cv-card" data-aos="fade-right" data-aos-duration="800">
-                    <div class="card-header">
-                        <h3>Senior Software Engineer</h3>
-                        <span class="time-tag">Jan 2024 — Present</span>
+                <div class="skills-group" data-aos="fade-up" data-aos-duration="600">
+                    <h4>Generative AI & LLMs</h4>
+                    <div class="skills-container">
+                        <div class="skill-pill">LLM</div>
+                        <div class="skill-pill">RAG</div>
+                        <div class="skill-pill">Agentic Frameworks</div>
+                        <div class="skill-pill">LangChain API</div>
+                        <div class="skill-pill">LangGraph</div>
+                        <div class="skill-pill">LlamaIndex</div>
                     </div>
-                    <div class="subtitle">TechCorp Inc.</div>
-                    <ul>
-                        <li>Led development of a high-traffic e-commerce dashboard, improving page load speeds by 40% using Next.js frameworks.</li>
-                        <li>Architected and migrated legacy microservices to containerized Docker nodes, cutting deployment processing times by 25%.</li>
-                        <li>Mentored 4 junior developers and established test coverage and code review standards across the cluster.</li>
-                    </ul>
                 </div>
 
-                <div class="cv-card" data-aos="fade-right" data-aos-duration="800" data-aos-delay="150">
-                    <div class="card-header">
-                        <h3>Software Engineer</h3>
-                        <span class="time-tag">Mar 2022 — Dec 2023</span>
+                <div class="skills-group" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                    <h4>Machine & Deep Learning</h4>
+                    <div class="skills-container">
+                        <div class="skill-pill">RNN</div>
+                        <div class="skill-pill">LSTM</div>
+                        <div class="skill-pill">Linear Regression</div>
+                        <div class="skill-pill">Logistic Regression</div>
+                        <div class="skill-pill">Poisson Regression</div>
+                        <div class="skill-pill">Random Forest</div>
+                        <div class="skill-pill">SVM</div>
                     </div>
-                    <div class="subtitle">WebStart Solutions</div>
-                    <ul>
-                        <li>Built and maintained robust, highly available RESTful API systems handling over 50k monthly active data consumers.</li>
-                        <li>Optimized complex structural database queries, cutting overall server execution latency margins by 15%.</li>
-                        <li>Collaborated closely with design architects to implement fully responsive, production-accessible UI paradigms.</li>
-                    </ul>
                 </div>
 
-            </div>
-        </section>
-
-        <!-- Projects & Core Skills split layout -->
-        <div class="grid grid-2col">
-            
-            <!-- Projects Block -->
-            <section>
-                <h2>03. Model_Weights</h2>
-                <div class="grid">
-                    <div class="cv-card" data-aos="zoom-in-up" data-aos-duration="800">
-                        <h3>DevSpace</h3>
-                        <p class="subtitle">React | Node.js | MongoDB</p>
-                        <p style="font-size: 0.95rem; color: var(--text-secondary);">Developed a collaborative platform featuring real-time markdown synchronization, secure JWT authentication mechanisms, and structured binary storage routing via AWS asset endpoints.</p>
+                <div class="skills-group" data-aos="fade-up" data-aos-duration="600" data-aos-delay="150">
+                    <h4>Languages & Tools</h4>
+                    <div class="skills-container">
+                        <div class="skill-pill">Python</div>
+                        <div class="skill-pill">PySpark</div>
+                        <div class="skill-pill">Pandas</div>
+                        <div class="skill-pill">NumPy</div>
+                        <div class="skill-pill">Streamlit</div>
+                        <div class="skill-pill">FastAPI</div>
                     </div>
-                    <div class="cv-card" data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="100">
+                </div>
+
+                <div class="skills-group" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                    <h4>Data Storage & Cloud</h4>
+                    <div class="skills-container">
+                        <div class="skill-pill">Microsoft Azure</div>
+                        <div class="skill-pill">Vertica</div>
