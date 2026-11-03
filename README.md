@@ -1,6 +1,6 @@
 # Monish Mathpal
 **Data Scientist**  
-📍 Pune, Maharashtra | 📧 monishmathpal@gmail.com | 🌐 [portfolio.github.io](https://monishma.github.io) | 🐙 [://github.com](https://://github.com) | 💼 [://linkedin.com](https://www.linkedin.com/in/monish-mathpal/)
+📍 Pune, Maharashtra | 📧[email-id](monishmathpal@gmail.com) | 🌐 [portfolio](https://monishma.github.io) | 🐙 [github profile](https://github.com/monisma) | 💼 [linkedin profile](https://www.linkedin.com/in/monish-mathpal/)
 
 ---
 
