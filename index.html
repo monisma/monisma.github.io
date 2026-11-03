@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI/ML Engineer CV</title>
+    <title>Monish Mathpal | Data Scientist CV</title>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://googleapis.com" rel="stylesheet">
     <!-- AOS CSS Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com" rel="stylesheet">
     
     <style>
         :root {
@@ -52,7 +52,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 4rem;
+            margin-bottom: 3rem;
             border-bottom: 1px solid var(--border);
             padding-bottom: 2rem;
         }
@@ -71,6 +71,25 @@
             margin-top: 0.25rem;
         }
 
+        .contact-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+            font-size: 0.85rem;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .contact-bar a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .contact-bar a:hover {
+            color: var(--accent);
+        }
+
         .theme-toggle {
             background: var(--bg-secondary);
             border: 1px solid var(--border);
@@ -83,11 +102,11 @@
         }
 
         section {
-            margin-bottom: 4rem;
+            margin-bottom: 3.5rem;
         }
 
         h2 {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             margin-bottom: 1.5rem;
             display: flex;
             align-items: center;
@@ -122,7 +141,7 @@
             align-items: flex-start;
             flex-wrap: wrap;
             gap: 0.5rem;
-            margin-bottom: 0.75rem;
+            margin-bottom: 0.5rem;
         }
 
         .time-tag {
@@ -156,7 +175,6 @@
             border: 1px solid var(--border);
             border-radius: 12px;
             padding: 1.25rem;
-            margin-bottom: 1rem;
         }
 
         .skills-group h4 {
@@ -181,9 +199,20 @@
             border-radius: 6px;
         }
 
+        .meta-list {
+            list-style: none;
+        }
+        
+        .meta-list li {
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
         @media (min-width: 768px) {
             body { padding: 4rem 2rem; }
-            .grid-2col { grid-template-columns: 1.2fr 0.8fr; }
+            .grid-2col { grid-template-columns: 1.1fr 0.9fr; }
+            .grid-skills { grid-template-columns: 1fr 1fr; }
         }
     </style>
 </head>
@@ -193,136 +222,82 @@
         
         <!-- Header Profile -->
         <header data-aos="fade-down" data-aos-duration="1000">
-            <div class="hero-title">
-                <h1>Elena Rostova</h1>
-                <span>[ AI / Machine Learning Engineer ]</span>
+            <div>
+                <div class="hero-title">
+                    <h1>Monish Mathpal</h1>
+                    <span>[ Data Scientist ]</span>
+                </div>
+                <div class="contact-bar">
+                    <span>📍 Pune, Maharashtra</span>
+                    <a href="mailto:monishmathpal@gmail.com">📧 Email</a>
+                    <a href="https://monishma.github.io" target="_blank">🌐 Portfolio</a>
+                    <a href="https://github.com/monisma" target="_blank">🐙 GitHub</a>
+                    <a href="https://www.linkedin.com/in/monish-mathpal/" target="_blank">💼 LinkedIn</a>
+                </div>
             </div>
-            <button class="theme-toggle" id="themeBtn">epoch_toggle()</button>
+            <button class="theme-toggle" id="themeBtn">loss_toggle()</button>
         </header>
 
-        <!-- Summary -->
+        <!-- Profile Summary -->
         <section data-aos="fade-up" data-aos-duration="800">
-            <h2>01. Objective_Function</h2>
-            <p class="subtitle" style="font-size: 1.1rem;">
-                Machine Learning Engineer specializing in distributed deep learning training, custom LLM fine-tuning, and low-latency inference optimization. Experienced in scaling computer vision and NLP models from research proofs to production infrastructure.
+            <h2>01. Profile</h2>
+            <p class="subtitle" style="font-size: 1.1rem; line-height: 1.7;">
+                Passionate full-stack data professional with 4+ years of experience building scalable applications and predictive solutions. Specialized in architecture development, quantitative engineering frameworks, open-source utilities, and localized workflow optimization.
             </p>
         </section>
 
-        <!-- Dynamic Experience Section -->
+        <!-- Technical Skills Mapping -->
         <section>
-            <h2>02. Professional_History</h2>
-            <div class="grid">
+            <h2>02. Core_Competencies</h2>
+            <div class="grid grid-skills">
                 
-                <div class="cv-card" data-aos="fade-right" data-aos-duration="800">
-                    <div class="card-header">
-                        <h3>Senior AI Engineer</h3>
-                        <span class="time-tag">2024 — Present</span>
+                <div class="skills-group" data-aos="fade-up" data-aos-duration="600">
+                    <h4>Generative AI & LLMs</h4>
+                    <div class="skills-container">
+                        <div class="skill-pill">LLM</div>
+                        <div class="skill-pill">RAG</div>
+                        <div class="skill-pill">Agentic Frameworks</div>
+                        <div class="skill-pill">LangChain API</div>
+                        <div class="skill-pill">LangGraph</div>
+                        <div class="skill-pill">LlamaIndex</div>
                     </div>
-                    <div class="subtitle">NeuralCompute Automation</div>
-                    <ul>
-                        <li>Fine-tuned and deployed domain-specific LLMs (7B/70B params) reducing operational latency by 35%.</li>
-                        <li>Optimized training cluster utilization across multi-node GPU systems using Deepspeed and Megatron-LM.</li>
-                        <li>Built high-throughput real-time inference endpoints running on Triton Inference Server.</li>
-                    </ul>
                 </div>
 
-                <div class="cv-card" data-aos="fade-right" data-aos-duration="800" data-aos-delay="150">
-                    <div class="card-header">
-                        <h3>Machine Learning Developer</h3>
-                        <span class="time-tag">2022 — 2024</span>
+                <div class="skills-group" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                    <h4>Machine & Deep Learning</h4>
+                    <div class="skills-container">
+                        <div class="skill-pill">RNN</div>
+                        <div class="skill-pill">LSTM</div>
+                        <div class="skill-pill">Linear Regression</div>
+                        <div class="skill-pill">Logistic Regression</div>
+                        <div class="skill-pill">Poisson Regression</div>
+                        <div class="skill-pill">Random Forest</div>
+                        <div class="skill-pill">SVM</div>
                     </div>
-                    <div class="subtitle">VisionAI Labs</div>
-                    <ul>
-                        <li>Developed production-grade object detection models utilizing PyTorch, cutting error rates by 12%.</li>
-                        <li>Built end-to-end automated MLOps pipelines using Kubeflow to version datasets and models.</li>
-                        <li>Quantized large CNN models using TensorRT for embedded edge device deployments.</li>
-                    </ul>
+                </div>
+
+                <div class="skills-group" data-aos="fade-up" data-aos-duration="600" data-aos-delay="150">
+                    <h4>Languages & Tools</h4>
+                    <div class="skills-container">
+                        <div class="skill-pill">Python</div>
+                        <div class="skill-pill">PySpark</div>
+                        <div class="skill-pill">Pandas</div>
+                        <div class="skill-pill">NumPy</div>
+                        <div class="skill-pill">Streamlit</div>
+                        <div class="skill-pill">FastAPI</div>
+                    </div>
+                </div>
+
+                <div class="skills-group" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                    <h4>Data Storage & Cloud</h4>
+                    <div class="skills-container">
+                        <div class="skill-pill">Microsoft Azure</div>
+                        <div class="skill-pill">Vertica</div>
+                        <div class="skill-pill">MySQL</div>
+                        <div class="skill-pill">Cassandra</div>
+                    </div>
                 </div>
 
             </div>
         </section>
 
-        <!-- Projects & Core Skills split layout -->
-        <div class="grid grid-2col">
-            
-            <!-- Projects Block -->
-            <section>
-                <h2>03. Model_Weights</h2>
-                <div class="grid">
-                    <div class="cv-card" data-aos="zoom-in-up" data-aos-duration="800">
-                        <h3>Autonomous Perception Suite</h3>
-                        <p class="subtitle">Real-time object mapping using transformer architectures deployed to edge units.</p>
-                    </div>
-                    <div class="cv-card" data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="100">
-                        <h3>AstroGen NLP</h3>
-                        <p class="subtitle">Fine-tuned open-weight model specialized in legal and scientific compliance documentation parsing.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Specialized AI Core Stack Block -->
-            <section>
-                <h2>04. Latent_Spaces</h2>
-                <div class="grid">
-                    
-                    <div class="skills-group" data-aos="fade-left" data-aos-duration="600">
-                        <h4>Frameworks & Math</h4>
-                        <div class="skills-container">
-                            <div class="skill-pill">PyTorch</div>
-                            <div class="skill-pill">TensorFlow</div>
-                            <div class="skill-pill">NumPy</div>
-                            <div class="skill-pill">Scikit-Learn</div>
-                            <div class="skill-pill">Linear Algebra</div>
-                        </div>
-                    </div>
-
-                    <div class="skills-group" data-aos="fade-left" data-aos-duration="600" data-aos-delay="100">
-                        <h4>MLOps & Scaling</h4>
-                        <div class="skills-container">
-                            <div class="skill-pill">MLflow</div>
-                            <div class="skill-pill">Kubeflow</div>
-                            <div class="skill-pill">Triton</div>
-                            <div class="skill-pill">Docker</div>
-                            <div class="skill-pill">CUDA</div>
-                            <div class="skill-pill">Hugging Face</div>
-                        </div>
-                    </div>
-
-                    <div class="skills-group" data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
-                        <h4>Infrastructure</h4>
-                        <div class="skills-container">
-                            <div class="skill-pill">AWS (SageMaker)</div>
-                            <div class="skill-pill">GCP (Vertex AI)</div>
-                            <div class="skill-pill">Linux / Bash</div>
-                            <div class="skill-pill">Git / CI-CD</div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-        </div>
-
-        <footer style="margin-top: 4rem; text-align: center; font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: var(--text-secondary);" data-aos="fade-in" data-aos-duration="1200">
-            // Convergence reached. Loss: 0.0024. Hosted on GitHub Pages.
-        </footer>
-
-    </div>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            once: true,
-            mirror: false,
-            offset: 50
-        });
-
-        const themeBtn = document.getElementById('themeBtn');
-        themeBtn.addEventListener('click', () => {
-            const currentTheme = document.documentElement.getAttribute('data-theme');
-            const targetTheme = currentTheme === 'light' ? 'dark' : 'light';
-            document.documentElement.setAttribute('data-theme', targetTheme);
-        });
-    </script>
-</body>
-</html>
