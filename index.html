@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monish Mathpal | Data Scientist CV</title>
-    <!-- Corrected Google Fonts Integration Links -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Google Fonts Integration Links -->
+    <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com" rel="stylesheet">
-    <!-- Corrected CDN URLs for AOS Library Style Layers -->
+    <link href="https://googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- CDN URLs for AOS Library Style Layers -->
     <link href="https://unpkg.com" rel="stylesheet">
     
     <style>
-        :root {
+        /* Explicitly separating theme states to fix transition blocks */
+        :root, [data-theme="dark"] {
             --bg-primary: #070a13;
             --bg-secondary: #0f1322;
             --text-primary: #f8fafc;
@@ -34,7 +35,7 @@
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            transition: background-color 0.3s ease, border-color 0.3s ease;
+            transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
         }
 
         body {
@@ -232,9 +233,9 @@
                 <div class="contact-bar">
                     <span>📍 Pune, Maharashtra</span>
                     <a href="mailto:monishmathpal@gmail.com">📧 Email</a>
-                    <a href="https://monishma.github.io" target="_blank">🌐 Portfolio</a>
-                    <a href="https://github.com/monisma" target="_blank">🐙 GitHub</a>
-                    <a href="https://www.linkedin.com/in/monish-mathpal/" target="_blank">💼 LinkedIn</a>
+                    <a href="https://github.io" target="_blank">🌐 Portfolio</a>
+                    <a href="https://github.com" target="_blank">🐙 GitHub</a>
+                    <a href="https://linkedin.com" target="_blank">💼 LinkedIn</a>
                 </div>
             </div>
             <button class="theme-toggle" id="themeBtn">loss_toggle()</button>
@@ -293,5 +294,3 @@
                 <div class="skills-group" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
                     <h4>Data Storage & Cloud</h4>
                     <div class="skills-container">
-                        <div class="skill-pill">Microsoft Azure</div>
-                        <div class="skill-pill">Vertica</div>
