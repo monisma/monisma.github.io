@@ -1,6 +1,6 @@
-# John Doe
-**Software Engineer**  
-📍 San Francisco, CA | 📧 john.doe@email.com | 🌐 [portfolio.github.io](https://github.io) | 🐙 [://github.com](https://://github.com) | 💼 [://linkedin.com](https://://linkedin.com)
+# Monish Mathpal
+**Data Scientist**  
+📍 Pune, Maharashtra | 📧 monishmathpal@gmail.com | 🌐 [portfolio.github.io](https://monishma.github.io) | 🐙 [://github.com](https://://github.com) | 💼 [://linkedin.com](https://www.linkedin.com/in/monish-mathpal/)
 
 ---
 
@@ -10,10 +10,15 @@ Passionate full-stack developer with 4+ years of experience building scalable we
 ---
 
 ## 🛠️ Technical Skills
-*   **Languages:** JavaScript (ES6+), TypeScript, Python, HTML5, CSS3, SQL
-*   **Frameworks & Libraries:** React, Next.js, Node.js, Express, Tailwind CSS
-*   **Databases & Tools:** PostgreSQL, MongoDB, Git, Docker, AWS (S3, EC2), Jest
+* **Gen AI :** LLM, RAG, Agentic, LangChain API, LangGraph, LLamaIndex 
+* **DL Algorithms:** RNN, LSTM
+* **ML Algorithms:** Linear Regression, Logistic(Binomial) Regression, Poisson Regression, Random Forest, SVM
 
+
+* **Tools/Languages:** PySpark, Python, Pandas, Numpy
+* **Cloud:** Microsoft Azure
+* **Database:** Vertica, MySQL, Cassandra
+* **Web Technologies:** Streamlit, FastAPI, 
 ---
 
 ## 💼 Professional Experience
