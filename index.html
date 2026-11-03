@@ -12,13 +12,13 @@
     <link href="https://unpkg.com" rel="stylesheet">
     
     <style>
-        /* Explicitly separating theme states to fix transition blocks */
+        /* Explicitly defining values for both states */
         :root, [data-theme="dark"] {
             --bg-primary: #070a13;
             --bg-secondary: #0f1322;
             --text-primary: #f8fafc;
             --text-secondary: #94a3b8;
-            --accent: #10b981; /* Machine Learning Green */
+            --accent: #10b981; 
             --border: rgba(255, 255, 255, 0.06);
         }
 
@@ -31,11 +31,12 @@
             --border: rgba(0, 0, 0, 0.08);
         }
 
+        /* Enforcing strict transitions across all structural nodes */
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+            transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
         }
 
         body {
@@ -64,6 +65,7 @@
             font-size: 2.5rem;
             font-weight: 700;
             letter-spacing: -0.05em;
+            color: var(--text-primary);
         }
 
         .hero-title span {
@@ -83,10 +85,13 @@
             font-family: 'JetBrains Mono', monospace;
         }
 
+        .contact-bar span {
+            color: var(--text-secondary);
+        }
+
         .contact-bar a {
             color: var(--text-secondary);
             text-decoration: none;
-            transition: color 0.2s;
         }
 
         .contact-bar a:hover {
@@ -115,6 +120,7 @@
             align-items: center;
             gap: 0.5rem;
             font-family: 'JetBrains Mono', monospace;
+            color: var(--text-primary);
         }
 
         h2::after {
@@ -136,6 +142,15 @@
             border-radius: 12px;
             padding: 1.5rem;
             position: relative;
+            color: var(--text-primary);
+        }
+
+        .cv-card h3 {
+            color: var(--text-primary);
+        }
+
+        .cv-card p {
+            color: var(--text-secondary);
         }
 
         .card-header {
@@ -171,6 +186,11 @@
 
         .cv-card li {
             margin-bottom: 0.4rem;
+            color: var(--text-secondary);
+        }
+        
+        .cv-card li strong {
+            color: var(--text-primary);
         }
 
         .skills-group {
@@ -198,6 +218,7 @@
             font-size: 0.8rem;
             background: var(--bg-primary);
             border: 1px solid var(--border);
+            color: var(--text-secondary);
             padding: 0.3rem 0.6rem;
             border-radius: 6px;
         }
@@ -244,7 +265,7 @@
         <!-- Profile Summary -->
         <section data-aos="fade-up" data-aos-duration="800">
             <h2>01. Profile</h2>
-            <p class="subtitle" style="font-size: 1.1rem; line-height: 1.7;">
+            <p style="font-size: 1.1rem; line-height: 1.7; color: var(--text-primary);">
                 Passionate full-stack data professional with 4+ years of experience building scalable applications and predictive solutions. Specialized in architecture development, quantitative engineering frameworks, open-source utilities, and localized workflow optimization.
             </p>
         </section>
@@ -284,13 +305,3 @@
                     <div class="skills-container">
                         <div class="skill-pill">Python</div>
                         <div class="skill-pill">PySpark</div>
-                        <div class="skill-pill">Pandas</div>
-                        <div class="skill-pill">NumPy</div>
-                        <div class="skill-pill">Streamlit</div>
-                        <div class="skill-pill">FastAPI</div>
-                    </div>
-                </div>
-
-                <div class="skills-group" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
-                    <h4>Data Storage & Cloud</h4>
-                    <div class="skills-container">
